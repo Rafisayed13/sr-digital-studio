@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SR Digital Studio | Web Design & Marketing UAE",
-  description: "Expert freelance web design, video editing, and digital marketing for UAE businesses.",
+  // metadataBase ensures images and links work correctly when shared on WhatsApp/LinkedIn
+  metadataBase: new URL('https://sr-digital-studio.vercel.app'),
+  title: "Web Design & Digital Marketing Agency in Dubai | SR Digital Studio",
+  description: "Looking for a freelance web developer in Dubai? SR Digital Studio builds high-converting business websites, manages Google Ads, and provides local SEO for UAE businesses.",
+  keywords: ["Web Design Dubai", "Freelance Web Developer UAE", "Digital Marketing Agency Dubai", "Local SEO UAE"],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
